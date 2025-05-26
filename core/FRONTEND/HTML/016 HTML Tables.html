@@ -1,168 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>  /* Adds a cells */
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-    }
-
-    td, th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-
-    tr:nth-child(even) {
-      background-color: #dddddd;
-    }
-  </style>
-  <style>  /* How To Add a Border */
-    table, th, td {
-      border: 1px solid black;
-    }
-  </style>
-  <style>  /* Collapsed Table Borders */
-      table, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
-  </style>
-  <style>  /* Style Table Borders */
-    table, th, td {
-      border: 1px solid white;
-      border-collapse: collapse;
-    }
-    th, td {
-      background-color: #96D4D4;
-    }
-  </style>
-  <style>  /* Round Table Borders */
-    table, th, td {
-      border: 1px solid black;
-      border-radius: 10px;
-    }
-  </style>
-  <style>  /* Round cells only */
-      th, td {
-    border: 1px solid black;
-    border-radius: 10px;
-  }
-  </style>
-  <style>  /* Dotted Table Borders */
-    th, td {
-      border-style: dotted;
-      border-style: dashed;
-      border-style: solid;
-      border-style: double;
-      border-style: groove;
-      border-style: ridge;
-      border-style: inset;
-      border-style: outset;
-      border-style: none;
-      border-style: hidden;
-    }
-  </style>
-  <style>  /* Border Color */
-    th, td {
-      border-color: #96D4D4;
-    }
-  </style>
-  <style>  /* Align Table Headers */
-    th {
-      text-align: left;
-    }
-  </style>
-  <style>  /* HTML Table - Cell Padding */
-    th, td {
-      padding: 15px;
-    }
-  </style>
-  <style>  /* Add padding to the other sides */
-    th, td {
-      padding-top: 10px;
-      padding-bottom: 20px;
-      padding-left: 30px;
-      padding-right: 40px;
-    }
-  </style>
-  <style>  /* HTML Table - Cell Spacing */
-    table {
-      border-spacing: 30px;
-    }
-  </style>
-  <style>  /* HTML Table - Zebra Stripes */
-    tr:nth-child(even) {
-      background-color: #D6EEEE;
-    }
-  </style>
-  <style>  /* HTML Table - Vertical Zebra Stripes */
-    td:nth-child(even), th:nth-child(even) {
-      background-color: #D6EEEE;
-    }
-  </style>
-  <style>  /* HTML Table - Vertical Zebra Stripes */
-    tr:nth-child(even) {
-      background-color: rgba(150, 212, 212, 0.4);
-    }
-    th:nth-child(even),td:nth-child(even) {
-      background-color: rgba(150, 212, 212, 0.4);
-    }
-  </style>
-  <style>  /* Horizontal Dividers */
-    tr {
-      border-bottom: 1px solid #ddd;
-    }
-  </style>
   <style>  /* Hoverable Table */
-    tr:hover {
+    .hoverable:hover {
       background-color: #D6EEEE;
     }
   </style>
 </head>
 <body>
 
-<h2>HTML Table</h2>
+<h1>HTML Table</h1>
 
+<h2>Horizontal Dividers</h2>
 <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td style="border-bottom: 3px solid #ff0000;">16</td>
+    <td>14</td>
+    <td>10</td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-  <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
-  </tr>
-  <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
-  </tr>
-  <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
   </tr>
 </table>
 
+<h1>HTML Block and Inline Elements</h1>
+<table style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <th style="vertical-align: top; border: 1px solid #ddd; padding: 12px; font-family: sans-serif;">Block-level Elements</th>
+    <th style="vertical-align: top; border: 1px solid #ddd; padding: 12px; font-family: sans-serif;">Inline Elements</th>
+  </tr>
+  <tr>
+    <td style="vertical-align: top; border: 1px solid #ddd; padding: 12px; font-family: sans-serif;">
+      address, article, aside, blockquote, canvas, dd, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hr, li, main, nav, noscript, ol, p, pre, section, table, tfoot, ul, video
+    </td>
+    <td style="vertical-align: top; border: 1px solid #ddd; padding: 12px; font-family: sans-serif;">
+      a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, output, q, samp, script, select, small, span, strong, sub, sup, textarea, time, tt, var
+    </td>
+  </tr>
+</table>
+
+<h2>Hoverable Table</h2>
+<table>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr class="hoverable">
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+
+
+<!-- ------------- -->
 
 <h2>Define an HTML Table</h2>
 <table>
@@ -205,6 +104,7 @@
     <td>10</td>
   </tr>
 </table>
+      
 
 <h2>Table Headers</h2>
 <table>
@@ -225,7 +125,6 @@
   </tr>
 </table>
 
-https://www.w3schools.com/html/html_table_sizes.asp
 
 <h2>HTML Table Width</h2>
 <table style="width:100%">
@@ -246,6 +145,7 @@ https://www.w3schools.com/html/html_table_sizes.asp
   </tr>
 </table>
 
+
 <h2>HTML Table Column Width</h2>
 <table style="width:100%">
   <tr>
@@ -264,6 +164,7 @@ https://www.w3schools.com/html/html_table_sizes.asp
     <td>94</td>
   </tr>
 </table>
+
 
 <h2>HTML Table Row Height</h2>
 <table style="width:100%">
@@ -284,6 +185,7 @@ https://www.w3schools.com/html/html_table_sizes.asp
   </tr>
 </table>
 
+
 <h2>HTML Table Headers</h2>
 <table>
   <tr>
@@ -302,6 +204,7 @@ https://www.w3schools.com/html/html_table_sizes.asp
     <td>94</td>
   </tr>
 </table>
+
 
 <h2>Vertical Table Headers</h2>
 <table>
@@ -322,6 +225,7 @@ https://www.w3schools.com/html/html_table_sizes.asp
   </tr>
 </table>
 
+
 <h2>Header for Multiple Columns</h2>
 <table>
   <tr>
@@ -339,6 +243,7 @@ https://www.w3schools.com/html/html_table_sizes.asp
     <td>94</td>
   </tr>
 </table>
+
 
 <h2>Header for Multiple Columns</h2>
 <table style="width:100%">
@@ -358,8 +263,6 @@ https://www.w3schools.com/html/html_table_sizes.asp
 </table>
 
 
-https://www.w3schools.com/html/html_table_colspan_rowspan.asp
-
 <h2>HTML Table - Colspan</h2>
 <table>
   <tr>
@@ -377,6 +280,7 @@ https://www.w3schools.com/html/html_table_colspan_rowspan.asp
     <td>57</td>
   </tr>
 </table>
+
 
 <h2>HTML Table - Rowspan</h2>
 <table>
@@ -604,7 +508,6 @@ https://www.w3schools.com/html/html_table_colspan_rowspan.asp
       </tr>
       </table>
 
-      
 </body>
 </html>
 

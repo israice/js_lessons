@@ -1,13 +1,17 @@
 
 # About
-- https://github.com/XXXXXX/XXXXXXXXXXXXXXXXXX.git
-- ABOUT THE PROJECT NAME
-- ABOUT THE PROJECT
+- https://github.com/israice/js_lessons.git
+- FAST CHEATSHEETS
+- Creating the fastest CHEATSHEETS for programming 
 
 # DEV Log
 ## v001
-- PROJECT CREATED DATE 2025.12.31 
-
+- PROJECT CREATED DATE 2025.05.26
+## v002
+- html 016 updated
+- html 017 updated
+- added html 018 files
+- added html 022 files
 
 # Github CHEATSHEET
 ## Create new repository
@@ -27,7 +31,7 @@ git fetch origin; git checkout master; git reset --hard 1eaef8b; git clean -fdx
 
 ## Update repository
 git add .  
-git commit -m "COMMENT NAME"  
+git commit -m "added html 022 files"  
 git push
 
 
@@ -66,26 +70,30 @@ https://www.w3schools.com/html/html_page_title.asp
 https://www.w3schools.com/html/html_tables.asp
 017 HTML Lists
 https://www.w3schools.com/html/html_lists.asp
-018 HTML Block & Inline
+018 HTML Block and Inline
 https://www.w3schools.com/html/html_blocks.asp
-HTML Div
-HTML Classes
-HTML Id
-HTML Iframes
-HTML JavaScript
-HTML File Paths
-HTML Head
-HTML Layout
-HTML Responsive
-HTML Computercode
-HTML Semantics
-HTML Style Guide
-HTML Entities
-HTML Symbols
-HTML Emojis
-HTML Charsets
-HTML URL Encode
-HTML vs. XHTML
+020 HTML Div
+https://www.w3schools.com/html/html_div.asp
+021 HTML Classes
+https://www.w3schools.com/html/html_classes.asp
+022 HTML Id
+https://www.w3schools.com/html/html_id.asp
+023 HTML Iframes
+https://www.w3schools.com/html/html_iframe.asp
+024 HTML JavaScript
+025 HTML File Paths
+026 HTML Head
+027 HTML Layout
+028 HTML Responsive
+029 HTML Computercode
+030 HTML Semantics
+031 HTML Style Guide
+032 HTML Entities
+033 HTML Symbols
+034 HTML Emojis
+035 HTML Charsets
+036 HTML URL Encode
+037 HTML vs. XHTML
 
 ### HTML Forms
 HTML Forms
