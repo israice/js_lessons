@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+        p {
+          background-image: url('Background Image on an HTML element');
+        }
+        </style>
+      <style>
+        body {
+          background-image: url('Background Image on a Page');
+        }
+        </style>
+        <style>
+          body {
+            background-image: url('Background Repeat.jpg');
+          }
+          </style>
+          <style>
+          body {
+            background-image: url('no-repeat.jpg');
+            background-repeat: no-repeat;
+          }
+          </style>
+          <style>
+            body {
+              background-image: url('Background Cover.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+            </style>
+            <style>
+              body {
+                background-image: url('Background Stretch.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+              }
+              </style>
+    </head>
+<body>
+
+  https://www.w3schools.com/html/html_images.asp
+
+<h1>HTML Images</h1>
+<img src="../../DATA/IMG/example.png" alt="Italian Trulli">
+<img src="../../DATA/IMG/example.png" alt="Girl in a jacket">
+<img src="../../DATA/IMG/example.png" alt="Flowers in Chania">
+
+<h1>The src Attribute</h1>
+<img src="../../DATA/IMG/example.png" alt="Flowers in Chania">
+
+<h1>The alt Attribute</h1>
+<img src="BAD LINK.png" alt="Flowers in Chania">
+
+<h1>Image Size - Width and Height</h1>
+<img src="../../DATA/IMG/example.png" alt="Girl in a jacket" style="width:500px;height:600px;">
+<img src="../../DATA/IMG/example.png" alt="Girl in a jacket" width="500" height="600">
+
+<h1>Images on Another Server/Website</h1>
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+<h1>Animated Images</h1>
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+
+<h1>Image as a Link</h1>
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+<h1>Image Floating</h1>
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+  The image will float to the right of the text.</p>
+  <p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+  The image will float to the left of the text.</p>
+
+
+  <h1>Image Maps</h1>
+  <img src="./013 HTML Images.png" alt="Workplace" usemap="#workmap" width="400" height="379">
+  <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+    <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+  </map>
+
+  <h1>Image Map and JavaScript</h1>
+  <img src="./013 HTML Images.png" alt="Workplace" usemap="#workmap2" width="400" height="379">
+  <map name="workmap2">
+    <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm">
+  </map>
+  
+  <h1>Background Image on an HTML element</h1>
+    <p style="background-image: url('./013\ HTML\ Images.png');">
+      You can specify background images<br>
+      for any visible HTML element.<br>
+      In this example, the background image<br>
+      is specified for a p element.<br>
+      By default, the background-image<br>
+      will repeat itself in the direction(s)<br>
+      where it is smaller than the element<br>
+      where it is specified. (Try resizing the<br>
+      browser window to see how the<br>
+      background image behaves.
+      </p>
+
+  <h1>The HTML < picture > Element</h1>
+  <picture>
+    <source media="(min-width: 650px)" srcset="img_food.jpg">
+    <source media="(min-width: 465px)" srcset="img_car.jpg">
+    <img src="img_girl.jpg">
+  </picture>
+
+  <h1>The HTML < picture > Element</h1>
+  <picture>
+    <source srcset="img_avatar.png">
+    <source srcset="img_girl.jpg">
+    <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+  </picture>
+
+
+
+
+
+
+</body>
+</html>
