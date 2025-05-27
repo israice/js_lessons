@@ -13,6 +13,8 @@
 - added html 018 files
 - added html 022 files
 - added html 024 files
+## v003
+- added html 031 files
 
 # Github CHEATSHEET
 ## Create new repository
@@ -32,7 +34,7 @@ git fetch origin; git checkout master; git reset --hard 1eaef8b; git clean -fdx
 
 ## Update repository
 git add .  
-git commit -m "added html 024 files"  
+git commit -m "added html 031 files"  
 git push
 
 
@@ -86,12 +88,19 @@ https://www.w3schools.com/html/html_scripts.asp
 025 HTML File Paths
 https://www.w3schools.com/html/html_filepaths.asp
 026 HTML Head
+https://www.w3schools.com/html/html_head.asp
 027 HTML Layout
+https://www.w3schools.com/html/html_layout.asp
 028 HTML Responsive
+https://www.w3schools.com/html/html_responsive.asp
 029 HTML Computercode
+https://www.w3schools.com/html/html_computercode_elements.asp
 030 HTML Semantics
+https://www.w3schools.com/html/html5_semantic_elements.asp
 031 HTML Style Guide
+https://www.w3schools.com/html/html5_syntax.asp
 032 HTML Entities
+https://www.w3schools.com/html/html_entities.asp
 033 HTML Symbols
 034 HTML Emojis
 035 HTML Charsets

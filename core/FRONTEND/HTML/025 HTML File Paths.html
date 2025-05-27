@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <h1>JavaScript inside the HTML element</h1>
+    <table>
+      <tr>
+        <td>Path</td>
+        <td>Description</td>
+      </tr>
+      <tr>
+        <td>< img src="picture.jpg" ></td>
+        <td>The "picture.jpg" file is located in the same folder as the current page
+        </td>
+      </tr>
+      <tr>
+        <td>< img src="images/picture.jpg" ></td>
+        <td>The "picture.jpg" file is located in the images folder in the current folder</td>
+      </tr>
+      <tr>
+        <td>< img src="/images/picture.jpg" >	</td>
+        <td>The "picture.jpg" file is located in the images folder at the root of the current web</td>
+      </tr>
+      <tr>
+        <td>< img src="../picture.jpg" >	</td>
+        <td>The "picture.jpg" file is located in the folder one level up from the current folder</td>
+      </tr>
+    </table>
+    
+    <h1>Absolute File Paths</h1>
+    <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+
+    <h1>Relative File Paths</h1>
+    <h3>Best Practice is use relative file paths if possible</h3>
+    <img src="/images/picture.jpg" alt="Mountain">
+    <img src="images/picture.jpg" alt="Mountain">
+    <img src="../images/picture.jpg" alt="Mountain">
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
