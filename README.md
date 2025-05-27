@@ -12,6 +12,7 @@
 - html 017 updated
 - added html 018 files
 - added html 022 files
+- added html 024 files
 
 # Github CHEATSHEET
 ## Create new repository
@@ -31,7 +32,7 @@ git fetch origin; git checkout master; git reset --hard 1eaef8b; git clean -fdx
 
 ## Update repository
 git add .  
-git commit -m "added html 022 files"  
+git commit -m "added html 024 files"  
 git push
 
 
@@ -81,7 +82,9 @@ https://www.w3schools.com/html/html_id.asp
 023 HTML Iframes
 https://www.w3schools.com/html/html_iframe.asp
 024 HTML JavaScript
+https://www.w3schools.com/html/html_scripts.asp
 025 HTML File Paths
+https://www.w3schools.com/html/html_filepaths.asp
 026 HTML Head
 027 HTML Layout
 028 HTML Responsive
