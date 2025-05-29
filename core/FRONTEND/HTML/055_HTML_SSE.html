@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  https://www.w3schools.com/html/html5_serversentevents.asp
+
+<h1>HTML Server-Sent Events API</h1>
+<p>SSE позволяет серверу "пушить" данные к клиенту через одностороннее соединение</p>
+<p>A server-sent event is when a web page automatically gets messages/updates from a server.</p>
+<p>Normally, a web page has to request data from the server, but with server-sent events, the updates are pushed automatically.</p>
+
+
+<h1>SSE Receive Server-Sent Event Notifications</h1>
+<h2>FAST DEV</h2>
+<div id="result"></div>
+<script>
+  const x = document.getElementById("result");
+  if(typeof(EventSource) !== "undefined") {
+    let my_route = new EventSource("/the_route");
+    my_route.onmessage = function(event) {
+      x.innerHTML += event.data + "<br>";
+    };
+  } else {
+    x.innerHTML = "server not sending nothink.";
+  }
+</script>
+
+
+<!-- <h1>SSE Explained</h1>
+HTML-элемент, в который будут выводиться сообщения от сервера
+<div id="the_result_1"></div> -->
+<script>
+  // // Получаем DOM-элемент с id "the_result" и сохраняем его в переменную
+  // const the_div_id_2 = document.getElementById("the_result_1");
+  // // Проверяем, поддерживается ли API EventSource в данном браузере
+  // if(typeof(EventSource) !== "undefined") {
+  //   // Создаем новый объект EventSource, подключенный к указанному маршруту (SSE-эндпоинт)
+  //   let my_route_3 = new EventSource("/the_route"); // замените на ваш URL или файл
+  //   // Устанавливаем обработчик события "message" — вызывается при получении данных от сервера
+  //   my_route_3.onmessage = function(event) {
+  //     // Добавляем полученные данные (event.data) в содержимое <div>, добавляя перенос строки
+  //     the_div_id_2.innerHTML += event.data + "<br>";
+  //   };
+  // } else {
+  //   // Если EventSource не поддерживается, выводим сообщение об отсутствии поддержки
+  //   the_div_id_2.innerHTML = "server not sending nothink.";
+  // }
+</script>
+
+<h2>The EventSource Object</h2>
+<p>In the examples above we used the onmessage event to get messages. But other events are also available:</p>
+<li>onopen	When a connection to the server is opened</li>
+<li>onmessage	When a message is received</li>
+<li>onerror	When an error occurs</li>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

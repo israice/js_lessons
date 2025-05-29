@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  https://www.w3schools.com/html/html5_webworkers.asp
+
+
+<h1>HTML Web Workers API</h1>
+<h2>Web Workers API Example</h2>
+<p>Count numbers: <output id="result9"></output></p>
+<button onclick="startWorker9()">Start Worker</button> 
+<button onclick="stopWorker9()">Stop Worker</button>
+<script>
+let wwww;
+function startWorker9() {
+  const xxxx = document.getElementById("result9");
+  if(typeof(Worker) !== "undefined") {
+    if(typeof(wwww) == "undefined") {
+      wwww = new Worker("054 HTML Web Workers.js");
+    }
+    wwww.onmessage = function(event) {
+      xxxx.innerHTML = event.data;
+    };
+  } else {
+    xxxx.innerHTML = "Sorry! No Web Worker support.";
+  }
+}
+function stopWorker9() { 
+  wwww.terminate();
+  wwww = undefined;
+}
+</script>
+
+<h2>Check Web Worker API Support</h2>
+<div id="result2"></div>
+<script>
+const x = document.getElementById("result2");
+if(typeof(Worker) !== "undefined") {
+  x.innerHTML = "Your browser support Web Workers!";
+} else {
+  x.innerHTML = "Sorry, your browser does not support Web Workers.";
+}
+</script>
+
+<h2>Create a Web Worker Object</h2>
+<button onclick="startWorker()">Start Worker</button>
+<button onclick="stopWorker()">Stop Worker</button>
+<p>Result: <span id="result4">Waiting...</span></p>
+<script>
+  let ww;
+  function startWorker() {
+    if (typeof(Worker) === "undefined") {
+      alert("Sorry, your browser does not support Web Workers.");
+      return;
+    }
+    if (typeof(ww) === "undefined") {
+      ww = new Worker("054 HTML Web Workers.js");
+      ww.onmessage = function(event) {
+        document.getElementById("result4").innerHTML = event.data;
+      };
+    }
+  }
+  function stopWorker() {
+    if (ww) {
+      ww.terminate(); 
+      ww = undefined;
+      document.getElementById("result4").innerHTML = "Stopped.";
+    }
+  }
+</script>
+
+<h2>Terminate a Web Worker</h2>
+<p>To terminate a web worker object, and free browser/computer resources, use the terminate() method:</p>
+<p>w.terminate();</p>
+
+<h2>Reuse the Web Worker</h2>
+<p>If you set the web worker variable to undefined, after it has been terminated, you can reuse the worker/code:</p>
+<p>w = undefined;</p>
+
+<h2>Full Web Worker Example</h2>
+<p>Count numbers: <output id="result5"></output></p>
+<button onclick="startWorker()">Start Worker</button> 
+<button onclick="stopWorker()">Stop Worker</button>
+<script>
+let www;
+function startWorker() {
+  const x = document.getElementById("result5");
+  if(typeof(Worker) !== "undefined") {
+    if(typeof(www) == "undefined") {
+      www = new Worker("054 HTML Web Workers.js");
+    }
+    www.onmessage = function(event) {
+      x.innerHTML = event.data;
+    };
+  } else {
+    x.innerHTML = "Sorry! No Web Worker support.";
+  }
+}
+function stopWorker() { 
+  www.terminate();
+  www = undefined;
+}
+</script>
+
+
+<h1>Web Workers and the DOM</h1>
+<h3>Since web workers are in external .js files, they do not have access to the following JavaScript objects:</h3>
+<p>The window object</p>
+<p>The document object</p>
+<p>The parent object</p>
+
+
+
+</body>
+</html>

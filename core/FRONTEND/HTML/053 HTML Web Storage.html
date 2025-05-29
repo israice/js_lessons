@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  https://www.w3schools.com/html/html5_webstorage.asp
+
+<h1>HTML Web Storage API</h1>
+<h2>Web Storage API Objects</h2>
+<li>window.localStorage - stores data with no expiration date (data is not lost when the browser tab is closed)</li>
+<li>window.sessionStorage - stores data for one session (data is lost when the browser tab is closed)</li>
+
+<h1>Test Web Storage API Support</h1>
+<div id="result"></div>
+<script>
+  const x = document.getElementById("result");
+  if (typeof(Storage) !== "undefined") {
+    x.innerHTML = "Your browser supports Web storage!";
+  } else {
+    x.innerHTML = "Sorry, no Web storage support!";
+  }
+</script>
+
+<h1>The localStorage Object</h1>
+<div id="result2"></div>
+<script>
+const xx = document.getElementById("result2");
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+  // Store
+  localStorage.setItem("lastname", "Smith");
+  localStorage.setItem("bgcolor", "yellow");
+  // Retrieve
+  xx.innerHTML = localStorage.getItem("lastname");
+  xx.style.backgroundColor = localStorage.getItem("bgcolor");
+} else {
+  xx.innerHTML = "Sorry, no Web storage support!";
+}
+</script>
+
+<h1>The syntax for removing the "lastname" localStorage item</h1>
+<p>instead result3 use the real id</p>
+<div id="result3"></div>
+<script>
+const xxx = document.getElementById("result3");
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+  // Store
+  localStorage.removeItem("lastname", "Smith");
+  localStorage.removeItem("bgcolor", "yellow");
+  // Retrieve
+  xxx.innerHTML = localStorage.getItem("lastname");
+  xxx.style.backgroundColor = localStorage.getItem("bgcolor");
+} else {
+  xxx.innerHTML = "Sorry, no Web storage support!";
+}
+</script>
+
+<h1>Counting Clicks with localStorage</h1>
+<button onclick="clickCounter4()" type="button">Click me!</button>
+<p id="result4"></p>
+<script>
+  function clickCounter4() {
+    const x = document.getElementById("result4");
+    if (typeof(Storage) !== "undefined") {
+      if (localStorage.clickcount) {
+        localStorage.clickcount = Number(localStorage.clickcount)+1;
+      } else {
+        localStorage.clickcount = 1;
+      }
+      x.innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s)!";
+    } else {
+      x.innerHTML = "Sorry, no Web storage support!";
+    }
+  }
+  </script>
+
+<h1>Counting Clicks with sessionStorage</h1>
+<button onclick="clickCounter5()" type="button">Click me!</button>
+<p id="result5"></p>
+<script>
+  function clickCounter5() {
+    const x = document.getElementById("result5");
+    if (typeof(Storage) !== "undefined") {
+      if (sessionStorage.clickcount) {
+        sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+      } else {
+        sessionStorage.clickcount = 1;
+      }
+      x.innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session!";
+    } else {
+      x.innerHTML = "Sorry, no Web storage support!";
+    }
+  }
+  </script>
+
+
+
+
+
+
+</body>
+</html>

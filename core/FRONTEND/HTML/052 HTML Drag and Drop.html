@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  https://www.w3schools.com/html/html5_draganddrop.asp
+
+<h1>HTML Drag and Drop API</h1>
+<h2>HTML Drag and Drop API Example</h2>
+
+
+  </head>
+  <body>
+  
+  <h1>Drag and Drop API</h1>
+  <p>Drag the W3Schools image into the rectangle:</p>
+  <div style="width: 350px; height: 70px; padding: 10px; border: 1px solid #aaaaaa;" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
+  <br>
+  <img id="img1" src="../../DATA/IMG/example.png" draggable="true" ondragstart="dragstartHandler(event)" width="336" height="69">
+  <script>
+    function dragstartHandler(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    function dragoverHandler(ev) {
+      ev.preventDefault();
+    }
+    function dropHandler(ev) {
+      ev.preventDefault();
+      const data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
+
+
+
+<h2>Make an Element Draggable</h2>
+<p>< img id="img1" draggable="true" ></p>
+<p>or</p>
+<p> < p id="p1" draggable="true">Draggable text < /p ></p>
+
+<h2>How to drag and drop an < h1 > element to a < div > element:</h2>
+<div style="width: 350px; height: 70px; padding: 10px; border: 1px solid #aaaaaa;" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+<h1 id="h1" draggable="true" ondragstart="dragstartHandler(event)">W3Schools.com</h1><script>
+  function dragstartHandler(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+  function dragoverHandler(ev) {
+    ev.preventDefault();
+  }
+  function dropHandler(ev) {
+    ev.preventDefault();
+    const data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
+  </script>
+
+<p>Drag and drop the W3Schools link into the rectangle:</p>
+<div style="width: 350px; height: 70px; padding: 10px; border: 1px solid #aaaaaa;" id="div1" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
+<br>
+<a id="link1" href="https://w3schools.com" draggable="true" ondragstart="dragstartHandler(event)">W3Schools.com</a>
+<script>
+  function dragstartHandler(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+  function dragoverHandler(ev) {
+    ev.preventDefault();
+  }
+  function dropHandler(ev) {
+    ev.preventDefault();
+    const data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
+  </script>
+
+
+<p>Drag the image back and forth between the two div elements.</p>
+<div style="float: left; width: 100px; height: 35px; margin: 10px; padding: 10px; border: 1px solid black;" id="div3" ondrop="dropHandler3(event)"   ondragover="dragoverHandler3(event)">
+<img id="img3" src="../../DATA/IMG/example.png" draggable="true" ondragstart="dragstartHandler3(event)" width="88" height="31">
+</div>
+<div style="float: left; width: 100px; height: 35px; margin: 10px; padding: 10px; border: 1px solid black;" id="div3" ondrop="dropHandler3(event)"   ondragover="dragoverHandler3(event)"></div>
+<script>
+  function dragstartHandler3(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+  function dragoverHandler3(ev) {
+    ev.preventDefault();
+  }
+  function dropHandler3(ev) {
+    ev.preventDefault();
+    const data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
+  </script>
+
+
+
+
+
+
+</body>
+</html>

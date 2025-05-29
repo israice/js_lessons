@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Пример Server-Sent Events</title>
+</head>
+<body>
+  <h1>Текущее время с сервера:</h1>
+  <pre id="output"></pre>
+
+  <script>
+    // Подключаемся к /events на сервере
+    const eventSource = new EventSource('/events');
+
+    // Обработка входящих сообщений
+    eventSource.onmessage = function(event) {
+      document.getElementById('output').textContent = event.data;
+    };
+
+    // Обработка ошибок
+    eventSource.onerror = function(err) {
+      console.error("Ошибка SSE:", err);
+    };
+  </script>
+</body>
+</html>

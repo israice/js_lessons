@@ -5,134 +5,30 @@
 - Creating the fastest CHEATSHEETS for programming 
 
 # DEV Log
-## v001
+## v0.0.2
 - PROJECT CREATED DATE 2025.05.26
-## v002
+## v0.0.2
 - html 016 updated
 - html 017 updated
 - added html 018 files
 - added html 022 files
 - added html 024 files
-## v003
-- added html 031 files
+## v0.0.3
+- all basic html based w3schools tutorials was saved
+
 
 # Github CHEATSHEET
-## Create new repository
-git init  
-git add .  
-git commit -m "COMMENT NAME"  
-gh repo create  
-
 ## Load last updates and replace existing local files
 git fetch origin; git reset --hard origin/master; git clean -fd  
-
 ## Select a hash from the last 10 commits
 git log --oneline -n 10  
-
 ## Use the hash to get that exact version locally
 git fetch origin; git checkout master; git reset --hard 1eaef8b; git clean -fdx  
-
 ## Update repository
 git add .  
-git commit -m "added html 031 files"  
+git commit -m "all basic html based w3schools tutorials was saved"  
 git push
 
-
-## HTML Tutorial
-001 HTML Basic
-https://www.w3schools.com/html/html_basic.asp
-002 HTML Elements
-https://www.w3schools.com/html/html_elements.asp
-003 HTML Attributes
-https://www.w3schools.com/html/html_attributes.asp
-004 HTML Headings
-https://www.w3schools.com/html/html_headings.asp
-005 HTML Paragraphs
-https://www.w3schools.com/html/html_paragraphs.asp
-006 HTML Styles
-https://www.w3schools.com/html/html_styles.asp
-007 HTML Formatting
-https://www.w3schools.com/html/html_formatting.asp
-008 HTML Quotations
-https://www.w3schools.com/html/html_quotation_elements.asp
-009 HTML Comments
-https://www.w3schools.com/html/html_comments.asp
-010 HTML Colors
-https://www.w3schools.com/html/html_colors.asp
-011 HTML CSS
-https://www.w3schools.com/html/html_css.asp
-012 HTML Links
-https://www.w3schools.com/html/html_links.asp
-013 HTML Images
-https://www.w3schools.com/html/html_images.asp
-014 HTML Favicon
-https://www.w3schools.com/html/html_favicon.asp
-015 HTML Page Title
-https://www.w3schools.com/html/html_page_title.asp
-016 HTML Tables
-https://www.w3schools.com/html/html_tables.asp
-017 HTML Lists
-https://www.w3schools.com/html/html_lists.asp
-018 HTML Block and Inline
-https://www.w3schools.com/html/html_blocks.asp
-020 HTML Div
-https://www.w3schools.com/html/html_div.asp
-021 HTML Classes
-https://www.w3schools.com/html/html_classes.asp
-022 HTML Id
-https://www.w3schools.com/html/html_id.asp
-023 HTML Iframes
-https://www.w3schools.com/html/html_iframe.asp
-024 HTML JavaScript
-https://www.w3schools.com/html/html_scripts.asp
-025 HTML File Paths
-https://www.w3schools.com/html/html_filepaths.asp
-026 HTML Head
-https://www.w3schools.com/html/html_head.asp
-027 HTML Layout
-https://www.w3schools.com/html/html_layout.asp
-028 HTML Responsive
-https://www.w3schools.com/html/html_responsive.asp
-029 HTML Computercode
-https://www.w3schools.com/html/html_computercode_elements.asp
-030 HTML Semantics
-https://www.w3schools.com/html/html5_semantic_elements.asp
-031 HTML Style Guide
-https://www.w3schools.com/html/html5_syntax.asp
-032 HTML Entities
-https://www.w3schools.com/html/html_entities.asp
-033 HTML Symbols
-034 HTML Emojis
-035 HTML Charsets
-036 HTML URL Encode
-037 HTML vs. XHTML
-
-### HTML Forms
-HTML Forms
-HTML Form Attributes
-HTML Form Elements
-HTML Input Types
-HTML Input Attributes
-Input Form Attributes
-
-### HTML Graphics
-HTML Canvas
-HTML SVG
-
-### HTML Media
-HTML Media
-HTML Video
-HTML Audio
-HTML Plug-ins
-HTML YouTube
-
-### HTML APIs
-HTML Web APIs
-HTML Geolocation
-HTML Drag and Drop
-HTML Web Storage
-HTML Web Workers
-HTML SSE
 
 ### HTML Examples
 HTML Examples

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<h1>HTML Form Attributes</h1>
+<h2>The Action Attribute</h2>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1>The Target Attribute</h1>
+<p>_blank	The response is displayed in a new window or tab</p>
+<p>_self	The response is displayed in the current window</p>
+<p>_parent	The response is displayed in the parent frame</p>
+<p>_top	The response is displayed in the full body of the window</p>
+<p>framename	The response is displayed in a named iframe</p>
+
+<h1>GET Method</h1>
+<p>The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").</p>
+<p>NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)</p>
+<p>The length of a URL is limited (2048 characters)</p>
+<p>Useful for form submissions where a user wants to bookmark the result</p>
+<p>This example uses the GET method when submitting the form data:</p>
+<form action="/action_page.php" target="_blank" method="get">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1>POST Method</h1>
+<p>Always use POST if the form data contains sensitive or personal information!</p>
+<p>the submitted form data is not shown in the URL</p>
+<p>POST has no size limitations, and can be used to send large amounts of data.</p>
+<p>Form submissions with POST cannot be bookmarked</p>
+<p>This example uses the POST method when submitting the form data:</p>
+<form action="/action_page.php" target="_blank" method="post">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1>The Autocomplete Attribute</h1>
+<p>Helps to use same data from last time</p>
+<form action="/action_page.php" autocomplete="on">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email"><br><br>
+  <input type="submit">
+</form>
+
+<h1>The Novalidate Attribute</h1>
+<p>The novalidate attribute indicates that the form input is not to be validated on submit:</p>
+<form action="/action_page.php" novalidate>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit">
+</form>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

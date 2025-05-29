@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  https://www.w3schools.com/html/html5_video.asp
+
+<h1>HTML Video</h1>
+<h2>The HTML < video > Element</h2>
+<video width="400" controls>
+  <source src="../../DATA/IMG/video.mp4" type="video/mp4">
+  Your browser does not support HTML video.
+</video>
+
+<h2>HTML < video > Autoplay</h2>
+<p>Note: Chromium browsers do not allow autoplay in most cases.</p>
+<p>However, muted autoplay is always allowed.</p>
+<video width="320" height="240" autoplay>
+  <!-- <source src="../../DATA/IMG/video.mp4" type="video/mp4"> -->
+  Your browser does not support the video tag.
+</video>
+
+<h2>muted after autoplay to let your video start playing automatically</h2>
+<video width="320" height="240" autoplay muted>
+  <source src="../../DATA/IMG/video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<h2>HTML Video - Media Types</h2>
+<p>MP4	video/mp4</p>
+<p>WebM	video/webm</p>
+<p>Ogg	video/ogg</p>
+
+<h2>HTML Video - Methods, Properties, and Events</h2>
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="../../DATA/IMG/video.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+<script> 
+  var myVideo = document.getElementById("video1"); 
+  function playPause() { 
+    if (myVideo.paused) 
+      myVideo.play(); 
+    else 
+      myVideo.pause(); 
+  } 
+  function makeBig() { 
+      myVideo.width = 560; 
+  } 
+  function makeSmall() { 
+      myVideo.width = 320; 
+  } 
+  function makeNormal() { 
+      myVideo.width = 420; 
+  } 
+</script> 
+
+
+<h1>HTML Video Tags</h1>
+<p>< video >	Defines a video or movie</p>
+<p>< source >	Defines multiple media resources for media elements, such as < video > and < audio ></p>
+<p> < track >	Defines text tracks in media players</p>
+
+
+</body>
+</html>
